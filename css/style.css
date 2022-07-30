@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #121417;
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  width: 400px;
+}
+
+.container .card {
+  background: #252d37;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.container .card .icon {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.container .card .text h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.container .card .text p {
+  line-height: 1.5;
+  font-size: 15px;
+  color: #959eac;
+}
+
+.container .card .rate ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+
+.container .card .rate ul li {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #959eac;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .card .rate ul li:hover {
+  color: white;
+  background: #7c8798;
+}
+
+.container .card .rate ul li.active {
+  background: #fb7413;
+  color: white;
+}
+
+.container .card .rate button {
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #fb7413;
+  cursor: pointer;
+}
+
+.pop-up-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  background: #252d37;
+  padding: 30px 15px;
+  border-radius: 20px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pop-up-box.active {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.pop-up-box .generate-msg {
+  margin: 20px 0;
+  color: #fb7413;
+}
+
+.pop-up-box .generate-msg p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 4px 10px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.pop-up-box .content h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.pop-up-box .content p {
+  color: #959eac;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=style.css.map */
